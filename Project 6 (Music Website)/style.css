@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    color: var(--body);
+    font-size: 27px;
+}
+
+nav ul {
+    display: flex;
+    gap: 28px;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.hero-section {
+    background-image: url(images/hero.png);
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+
+.hero-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.hero-section h1 {
+    font-size: 65px;
+}
+
+.hero-section h3 {
+    font-size: 25px;
+}
+
+.music-section {
+    padding-top: 50px;
+    background-color: var(--purple500);
+}
+
+.music-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container h2,
+h3,
+h4,
+p {
+    color: white;
+    text-align: center;
+}
+
+.ipad-iphone-img {
+    margin-top: -350px;
+    position: relative;
+    top: 350px;
+}
+
+.primary-btn {
+    background-color: var(--red600);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.primary-btn:hover {
+    background-color: #b01212;
+}
+
+.about-music h3,
+h4 {
+    color: black;
+}
+
+.h4 {
+    color: white;
+    font-weight: normal;
+}
+
+.secondary-btn {
+    background-color: var(--purple300);
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.secondary-btn:hover {
+    background-color: #1e1e8e;
+}
+
+.about-music {
+    padding-top: 400px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+}
+
+.about-music h4 {
+    font-weight: normal;
+}
+
+.video-section {
+    background-image: url(images/video.png);
+    min-height: 700px;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+.video-section .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -200px;
+    gap: 30px;
+}
+
+.hero-section,
+.video-section {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gift-section{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+
+.card{
+    color: black;
+    text-align: left;
+}
+
+.p{
+    text-align: left;
+    color: black;
+}
+
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    margin: 126px;
+    margin-bottom: -126px;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sepration{
+    height: 1px;
+    background-color: white;
+    width: 178px;
+}
+
+.footer-lower{
+    margin-top: 200px;
+    color: black;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    background-color: var(--purple300);
+    padding: 6px;
+    color: white;
+}
+
+.footer-upper{
+    position: relative;
+    top: 30px;
+}
+
+section{
+    scroll-margin: 50px;
+}
+
+footer{
+    background-color: var(--purple600);
+    color: white;
+}
+
+.gift-section{
+    scroll-margin: 120px;
+}
+
+.about-music{
+    scroll-margin: -300px;
+}
+
+/* Tablet Devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+
+    nav ul {
+        gap: 16px;
+        font-size: 14px;
+    }
+
+    .hero-section h1 {
+        font-size: 48px;
+    }
+
+    .hero-section h3 {
+        font-size: 20px;
+    }
+
+    .ipad-iphone-img img,
+    .mac-img img {
+        width: 90%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin: 60px;
+    }
+
+    .about-music {
+        padding-top: 300px;
+    }
+}
+
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .hero-section h3 {
+        font-size: 18px;
+    }
+
+    /* MUSIC SECTION */
+    .music-section {
+        padding: 40px 20px;
+    }
+
+    .ipad-iphone-img {
+        margin-top: 0;
+        top: 0;
+    }
+
+    .ipad-iphone-img img {
+        width: 100%;
+    }
+
+    /* ABOUT SECTION */
+    .about-music {
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .mac-img img {
+        width: 100%;
+    }
+
+    /* VIDEO SECTION */
+    .video-section {
+        min-height: auto;
+        padding: 80px 20px;
+    }
+
+    .video-section .container {
+        margin-top: 0;
+    }
+
+    /* GIFT SECTION */
+    .gift-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .gift-img img {
+        width: 100%;
+    }
+
+    .gift-content {
+        text-align: center;
+    }
+
+    .card,
+    .p {
+        text-align: center;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        grid-template-columns: 1fr;
+        margin: 40px;
+        gap: 30px;
+    }
+
+    .footer-lower {
+        font-size: 16px;
+    }
+}
+
+
+/* Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+
+    .hero-section h1 {
+        font-size: 30px;
+    }
+
+    .hero-section h3 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4,
+    p {
+        font-size: 14px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+        padding: 12px;
+    }
+}

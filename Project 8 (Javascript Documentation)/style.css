@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+aside {
+    background-color: beige;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    font-size: 20px;
+    width: 200px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid;
+}
+
+aside ul a {
+    list-style: none;
+    border-bottom: 2px solid;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.light-sepration {
+    height: 1px;
+    width: 200px;
+    background-color: #2e2727;
+}
+
+.dark-sepration {
+    height: 2px;
+    width: 200px;
+    background-color: #2e2727;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+aside ul a:hover {
+    background: #ccc;
+    transition: 0.3s ease-in-out;
+}
+
+.container {
+    display: flex;
+    margin-top: -31px;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 33px;
+}
+
+#introduction ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 28px;
+    color: #3f3f3f;
+}
+
+#introduction p {
+    color: #3f3f3f;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+.content {
+    flex: 1;
+    margin-left: 200px;
+    padding: 30px;
+}
+
+#what-you-should-already-know {
+    display: flex;
+    flex-direction: column;
+    padding: 33px;
+    gap: 22px;
+}
+
+#what-you-should-already-know p {
+    color: #3f3f3f;
+}
+
+#what-you-should-already-know ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 28px;
+    color: #3f3f3f;
+}
+
+#javascript-and-java {
+    display: flex;
+    flex-direction: column;
+    padding: 33px;
+    gap: 22px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #3f3f3f;
+}
+
+.code-box {
+    position: relative;
+    padding: 12px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+.code-box pre {
+    margin: 0;
+    overflow-x: auto;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e0e0e0;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.copy-btn:hover {
+    background: #d5d5d5;
+}
+
+
+#hello-world {
+    display: flex;
+    flex-direction: column;
+    padding: 33px;
+    gap: 22px;
+}
+
+.hello-world-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #3f3f3f;
+}
+
+#variables {
+    display: flex;
+    flex-direction: column;
+    padding: 33px;
+    gap: 22px;
+}
+
+.variable-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #3f3f3f;
+}
+
+/* TABLET (max-width: 1024px) */
+@media (max-width: 1024px) {
+    aside {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .content {
+        margin-left: 180px;
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+/* MOBILE (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        border-right: none;
+        border-bottom: 2px solid;
+    }
+
+    .title {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    aside ul {
+        width: 100%;
+    }
+
+    aside ul a {
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}
+
+
+/* SMALL MOBILE (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .code-box {
+        padding: 8px;
+    }
+
+    .copy-btn {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+}
