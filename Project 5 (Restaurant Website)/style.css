@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background-color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1467px;
+    margin: 2px auto;
+}
+
+.bar-icon {
+    font-size: 30px;
+}
+
+.btn button {
+    background-color: #438e40;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    color: white;
+    font-weight: normal;
+}
+
+.heading h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.heading p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2b2222;
+}
+
+.button button {
+    background-color: #f2bb64;
+    padding: 8px 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #e2bf8b;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 132px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 112px;
+    margin-top: 100px;
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.feature:hover {
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    transition: 0.2s ease-in-out;
+}
+
+.sepration {
+    height: 4px;
+    background-color: gray;
+    margin-top: 40px;
+}
+
+.menu {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tag h2 {
+    font-weight: normal;
+}
+
+.menu .tag span {
+    background-color: #37902d;
+    display: inline;
+    color: white;
+    padding: 8px 12px;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "I1 I1 I2 I3"
+        "I1 I1 I2 I7"
+        "I4 I5 I6 I7";
+}
+
+.grid-image {
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-image:hover {
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
+}
+
+.item1 {
+    grid-area: I1;
+}
+
+.item2 {
+    grid-area: I2;
+}
+
+.item3 {
+    grid-area: I3;
+}
+
+.item4 {
+    grid-area: I4;
+}
+
+.item5 {
+    grid-area: I5;
+}
+
+.item6 {
+    grid-area: I6;
+}
+
+.item7 {
+    grid-area: I7;
+}
+
+footer {
+    background-color: #fff0bd;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.link-list h3 {
+    color: gray;
+}
+
+.news-letter h3 {
+    color: gray;
+}
+
+.link-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.link-list,
+.news-letter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-list ul li {
+    list-style: none;
+}
+
+.news-letter input {
+    padding: 3px 3px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 18px;
+    font-size: 23px;
+}
+
+@media (max-width: 786px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .heading {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 18px;
+    }
+
+    .btn {
+        padding: 18px;
+    }
+
+    .food {
+        display: flex;
+        justify-content: center;
+    }
+
+    .food img {
+        width: 80%;
+    }
+
+    .heading h1 {
+        font-size: 48px;
+    }
+
+    .section {
+        gap: 50px;
+    }
+
+    .intro {
+        gap: 1px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .grid {
+        padding: 15px;
+        border-radius: 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
